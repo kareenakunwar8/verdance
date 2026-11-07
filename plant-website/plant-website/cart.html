@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Your cart | Verdance</title><meta name="description" content="Review your plants and order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css"></head>
+<body>
+<div class="announce"><p>Free shipping over ₹999 · Nursery-fresh, packed in 24 hours · Replacement if it arrives unhappy</p></div>
+<header id="header">
+<button class="icon burger" data-open="menu" aria-label="Open menu"><span></span><span></span></button>
+<a class="logo" href="index.html">Verdance</a>
+<nav class="menu" aria-label="Main"><button class="close icon" data-close aria-label="Close menu">×</button>
+<a href="index.html">Home</a><a href="shop.html">Shop</a><a href="shop.html?cat=indoor">Indoor</a><a href="shop.html?cat=outdoor">Outdoor</a><a href="journal.html">Care guides</a><a href="about.html">About</a><a href="contact.html">Contact</a></nav>
+<div class="tools">
+<button class="icon" data-open="search" aria-label="Search"><svg viewBox="0 0 24 24" width="22" height="22"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 5 5"/></svg></button>
+<button class="icon" id="wishToggle" aria-label="Saved plants"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 21s-8-5.2-8-11a4.5 4.5 0 0 1 8-2.8A4.5 4.5 0 0 1 20 10c0 5.8-8 11-8 11z"/></svg><i id="wishCount">0</i></button>
+<button class="icon" data-open="cart" aria-label="Open cart"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M5 8h14l-1.2 12H6.2zM9 8a3 3 0 0 1 6 0"/></svg><i id="cartCount">0</i></button></div>
+<form id="searchForm" class="search"><input id="searchInput" type="search" placeholder="Search plants, e.g. monstera" aria-label="Search plants"><button class="icon" type="button" data-close aria-label="Close search">×</button></form>
+</header><div class="scrim" data-close></div>
+<main id="top"><section class="phero"><p class="crumb"><a href="index.html">Home</a> / Cart</p><h1>Your cart</h1><p>Add your delivery details and we will send the order to WhatsApp for confirmation.</p></section><section><div class="cp"><div id="cartPageItems"></div><aside class="box"><h2>Order summary</h2><div class="tot"><span>Total</span><b id="pageTotal">₹0</b></div><label class="f">Your name<input id="cName" autocomplete="name"></label><label class="f">Phone (optional)<input id="cPhone" type="tel" autocomplete="tel"></label><label class="f">Delivery address<textarea id="cAddr" autocomplete="street-address"></textarea></label><button class="btn" id="placeOrder" style="width:100%">Send order on WhatsApp</button><p class="note" style="margin-top:.8rem">Delivery charges and payment details are confirmed on WhatsApp.</p></aside></div></section></main>
+<footer>
+<div><a class="logo" href="index.html">Verdance</a><p>Nursery-grown plants for homes that want a little more green.</p></div>
+<div><h4>Shop</h4><a href="shop.html?cat=indoor">Indoor</a><a href="shop.html?cat=outdoor">Outdoor</a><a href="shop.html?cat=succulents">Succulents</a><a href="shop.html?cat=flowering">Flowering</a><a href="shop.html?cat=pots">Pots</a></div>
+<div><h4>Help</h4><a href="journal.html">Care guides</a><a href="faq.html">FAQ</a><a href="cart.html">Your cart</a><a href="about.html">About us</a><a href="contact.html">Contact</a></div>
+<div><h4>Visit</h4><p>Udaipur, Rajasthan<br>Open daily, 9am to 6pm</p></div>
+<small>© <span id="year"></span> Verdance. All rights reserved.</small></footer>
+<aside class="drawer" aria-label="Cart"><div class="dh"><h3>Your cart</h3><button class="icon" data-close aria-label="Close cart">×</button></div><div id="cartItems"></div>
+<div class="df"><p>Total <b id="cartTotal">₹0</b></p><a class="btn ghost" href="cart.html">View full cart</a><a id="cartOrder" class="btn" target="_blank" rel="noopener" href="#">Order on WhatsApp</a></div></aside>
+<div id="toast" role="status" aria-live="polite"></div>
+<button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="20" height="20"><path d="m6 14 6-6 6 6"/></svg></button>
+<script src="js/products.js"></script><script src="js/cart.js"></script><script src="js/main.js"></script></body></html>
